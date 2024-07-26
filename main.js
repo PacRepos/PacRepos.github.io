@@ -27,7 +27,11 @@ function main() {
   } else {
     user = prompt("Please enter your name:", "");
     if (user != "" && user != null) {
-      setCookie("username", user, 365);
+      if (user == "deez") {
+        setCookie("username", "you arent funny buddy", 365);
+      } else {
+        setCookie("username", user, 365);
+      }
     }
   }
 }
