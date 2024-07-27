@@ -35,6 +35,6 @@ function main() {
   document.getElementById("b").onclick = function click() {
     clicks += 1;
     document.getElementById("clickcount").innerHTML = "You have clicked " + clicks + " times!";
-    setcookie("clickamt", clicks, 365);
+    setCookie("clickamt", clicks, 365);
   }
 }
