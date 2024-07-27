@@ -26,7 +26,7 @@ function eraseCookie(cname) {
 
 function main() {
   let clicks = getCookie("clickamt");
-  if (clicks = "" || clicks = null) {
+  if (clicks == "" || clicks == null) {
     clicks = 0;
   } else {
     clicks = Number(clicks);
