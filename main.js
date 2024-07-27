@@ -8,9 +8,9 @@ function setCookie(cname, cvalue, exdays) {
 function getCookie(cname) {
   let name = cname + "=";
   let ca = document.cookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
+  for (let i = 0; i < ca.length; i++) {
     let c = ca[i];
-    while (c.charAt(0) == ' ') {
+    while (c.charAt(0) == ' ') { // remove leading spaces
       c = c.substring(1);
     }
     if (c.indexOf(name) == 0) {
@@ -20,14 +20,20 @@ function getCookie(cname) {
   return "";
 }
 
+function eraseCookie(cname) {
+  setCookie(cname, "", -1);
+}
+
 function main() {
-  let user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
+  let clicks = getCookie("clickamt");
+  if (clicks = "" || clicks = null) {
+    clicks = 0;
   } else {
-    user = prompt("Please enter your name:", "");
-    if (user != "" && user != null) {
-      setCookie("username", user, 365);
-    }
+    clicks = Number(clicks);
+  }
+  document.getElementById("b").onclick = function click() {
+    clicks += 1;
+    document.getElementById("clickcount").innerHTML = "You have clicked " + clicks + " times!";
+    setcookie("clickamt", clicks, 365);
   }
 }
