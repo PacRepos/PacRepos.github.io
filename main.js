@@ -39,6 +39,7 @@ function main() {
   } else {
     clicks = Number(clicks);
   }
+	
   document.getElementById("clickcount").innerHTML = "You have " + clicks + " clicks!";
   document.getElementById("clicker").onclick = function click() {
     clicks += 1;
