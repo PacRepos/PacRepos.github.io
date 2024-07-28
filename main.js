@@ -43,7 +43,7 @@ function main() {
   document.getElementById("clickcount").innerHTML = "You have " + clicks + " clicks!";
   document.getElementById("clicker").onclick = function click() {
     clicks += 1;
-    document.getElementById("clickcount").innerHTML = "You have clicked " + clicks + " times!";
+    document.getElementById("clickcount").innerHTML = "You have " + clicks + " clicks!";
     setCookie("clickamt", clicks, 365);
   }
 }
