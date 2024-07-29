@@ -33,10 +33,10 @@ function addShopButtons(clicks) {
 	if (clicks >= 50 && wasCreated == false) {
 		var btn = document.createElement("button");
 		div.append(btn);
-		btn.setAttribute("id", upg1);
-		document.getElementById(upg1).innerHTML = "Gain a x2 Multiplier to clicking manually for 50 clicks!";
+		btn.setAttribute("id", "upg1");
+		document.getElementById("upg1").innerHTML = "Gain a x2 Multiplier to clicking manually for 50 clicks!";
 		wasCreated = true;
-		document.getElementById(upg1).onclick = function() {
+		document.getElementById("upg1").onclick = function() {
 			if (clicks >= 50) {
 				clicks -= 50;
 				manualClickMult *= 2;
