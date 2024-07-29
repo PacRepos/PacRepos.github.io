@@ -1,6 +1,6 @@
 
 var manualClickMult = 1;
-var wasCreated = [false];
+var wasCreated = false;
 
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
@@ -30,12 +30,12 @@ function eraseCookie(cname) {
 
 function addShopButtons(clicks) {
 	var div = document.getElementById("shop");
-	if (clicks >= 50 && wasCreated[0] == false) {
+	if (clicks >= 50 && wasCreated == false) {
 		var btn = document.createElement("button");
 		div.append(btn);
 		btn.setAttribute("id", upg1);
 		document.getElementById(upg1).innerHTML = "Gain a x2 Multiplier to clicking manually for 50 clicks!";
-		wasCreated[0] = true;
+		wasCreated = true;
 		document.getElementById(upg1).onclick = function() {
 			if (clicks >= 50) {
 				clicks -= 50;
