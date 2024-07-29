@@ -52,11 +52,12 @@ function main() {
     clicks = Number(clicks);
   }
 
-	setInterval(function() {
-		document.getElementById("clickcount").innerHTML = "You have " + clicks + " clicks!";
-		document.getElementById("clicker").innerHTML = "Get +" + manualClickMult + " Clicks!";
-		setCookie("clickamt", clicks, 365);
-	}, 10);
+  setInterval(function() {
+	  document.getElementById("clickcount").innerHTML = "You have " + clicks + " clicks!";
+	  document.getElementById("clicker").innerHTML = "Get +" + manualClickMult + " Clicks!";
+	  setCookie("clickamt", clicks, 365);
+	  addShopButtons(clicks);
+  }, 10);
 	
   document.getElementById("clicker").onclick = function click() {
     clicks += 1;
