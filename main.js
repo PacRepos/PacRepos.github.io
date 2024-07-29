@@ -1,11 +1,3 @@
-/*
-let div = document.querySelector('div');
-for(var i = 0; i < 10; i++){
-	let button = document.createElement('button');
-      button.innerText = i;
-  div.append(button);
-}
-*/
 
 var manualClickMult = 1;
 
