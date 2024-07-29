@@ -40,7 +40,7 @@ function addShopButtons(clicks) {
 			if (clicks >= 50) {
 				clicks -= 50;
 				manualClickMult *= 2;
-				btn.remove();
+				this.remove();
 			}
 		}
 	}
