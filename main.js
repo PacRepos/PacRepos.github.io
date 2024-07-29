@@ -1,5 +1,6 @@
 
 var manualClickMult = 1;
+var wasPurchased = [false];
 
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
@@ -29,7 +30,7 @@ function eraseCookie(cname) {
 
 function addShopButtons(clicks) {
 	var div = document.getElementById("shop");
-	if (clicks >= 50) {
+	if (clicks >= 50 && wasPurchased[0] == false) {
 		var btn = document.createElement("button");
 		div.append(btn);
 		btn.setAttribute("id", upg1);
@@ -39,6 +40,7 @@ function addShopButtons(clicks) {
 				clicks -= 50;
 				manualClickMult *= 2;
 				btn.remove();
+				wasPurchased[0] = true;
 			}
 		}
 	}
