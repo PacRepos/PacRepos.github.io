@@ -57,13 +57,13 @@
                 
           setInterval(function() {
         	  document.getElementById("clickcount").innerHTML = "You have " + clicks + " clicks!";
-        	  document.getElementById("clicker").innerHTML = "Get +" + manualClickMult + " Clicks!";
+        	  document.getElementById("clicker").innerHTML = "Get +" + Number(manualClickMult) + " Clicks!";
         	  setCookie("clickamt", clicks, 365);
         	  setCookie("manualClickMult", manualClickMult, 365);
         	  addShopButtons(clicks);
           }, 10);
         	
           document.getElementById("clicker").onclick = function click() {
-            clicks += manualClickMult;
+            clicks = clicks + Number(manualClickMult);
           }
         }
