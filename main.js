@@ -24,7 +24,7 @@
         }
         
         function eraseCookie(cname) {
-          setCookie(cname, "", -1);
+          	setCookie(cname, "", -1);
         }
         
         function addShopButtons(clicks) {
@@ -63,6 +63,14 @@
         	  setCookie("clickamt", clicks, 365);
         	  setCookie("manualClickMult", manualClickMult, 365);
         	  addShopButtons(clicks);
+           if (clicks >= 1000000000) {
+             	document.getElementById("clickcount").innerHTML = "You're funny lil bro";
+        	  document.getElementById("clicker").innerHTML = "This is a work in progress so don't exploit it";
+			   document.getElementById("clicker").onclick = function niceTry() {
+            		clicks = 0;
+				   	manualClickMult = 1;
+          		}
+           }
           }, 10);
         	
           document.getElementById("clicker").onclick = function click() {
