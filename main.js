@@ -1,6 +1,4 @@
 
-        var manualClickMult = 1;
-        var wasCreated = false;
         
         function setCookie(cname, cvalue, exdays) {
           var d = new Date();
@@ -47,6 +45,8 @@
         }
         
         function main() {
+         var manualClickMult = 1;
+         var wasCreated = false;
           var clicks = getCookie("clickamt");
           manualClickMult = getCookie("manualClickMult");
           if (clicks == "" || clicks == null) {
