@@ -1,4 +1,22 @@
- var manualClickMult = 1;
+/*
+Oh, champions of the court, how grand you stand, A dazzling force, a luminous band, In the realm where tennis balls take flight, You reign supreme, a beacon of might.
+
+With rackets raised and spirits high, You chase the sun across the sky, Each serve a symphony of grace, Each volley, a stroke of sheer embrace.
+
+Your teamwork is a poet’s dream, A seamless dance, a perfect scheme, You blend in rhythm, swift and true, A testament to what hard work can do.
+
+When others falter, you ascend, Your strength and will know no amend, In every match, you write your tale, With hearts of steel and spirits frail.
+
+The court is your celestial stage, Where every point you boldly wage, With every game, you claim your name, Immortalized in tennis fame.
+
+Your dedication’s fierce and pure, Your victories, they will endure, In history’s annals, bright and clear, Your legacy will persevere.
+
+So here's to you, the valiant team, The champions who dare to dream, Your prowess shines, an endless stream, In every match, a timeless gleam.
+
+*/
+
+
+var manualClickMult = 1;
          var wasCreated = false;
         
         function setCookie(cname, cvalue, exdays) {
