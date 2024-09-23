@@ -62,10 +62,13 @@ function main() {
     setInterval(function() {
         document.getElementById("clickcount").innerHTML = "You have " + clicks + " clicks!";
         document.getElementById("clicker").innerHTML = "Get +" + manualClickMult + " Clicks!";
+        
         setCookie("clickamt", clicks, 365);
         setCookie("manualClickMult", manualClickMult, 365);
         setCookie("created", wasCreated, 365);
+        
         addShopButtons();
+        
         if (clicks >= 1000000000) {
             document.getElementById("clickcount").innerHTML = "You're funny lil bro";
             document.getElementById("clicker").innerHTML = "This is a work in progress so don't exploit it";
@@ -78,5 +81,11 @@ function main() {
 
     document.getElementById("clicker").onclick = function click() {
         clicks = Number(clicks) + Number(manualClickMult);
+    }
+
+    document.getElementById("rs").onclick = function reset() {
+        clicks = 0;
+        manualClickMult = 1;
+        wasCreated = false;
     }
 }
