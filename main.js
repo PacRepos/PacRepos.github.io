@@ -89,11 +89,7 @@ function main() {
         if (cBought[0]) {
             document.getElementById("active").innerHTML = "You have " + clickers[0] + " tier 1 clickers giving " + clickers[0] + " clicks per second.";
         } else if (cBought[1]) {
-             document.getElementById("active").innerHTML = "You have " + clickers[0] + " tier 1 clickers giving " + clickers[0] + " clicks per second.
-                 <br>
-                 You have " + clickers[1] + " tier 2 clickers giving " + (2 * clickers[1]) + " clicks per second.
-                 <br>
-                 Your total clicks per second is " + cps + ".";
+             document.getElementById("active").innerHTML = "You have " + clickers[0] + " tier 1 clickers giving " + clickers[0] + " clicks per second.<br>You have " + clickers[1] + " tier 2 clickers giving " + (2 * clickers[1]) + " clicks per second.<br>Your total clicks per second is " + cps + ".";
         } else {
             document.getElementById("active").innerHTML = "";
         }
