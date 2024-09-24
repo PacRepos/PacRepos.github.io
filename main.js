@@ -57,6 +57,7 @@ function addShopButtons() {
         document.getElementById("cupg1").innerHTML = "Purchase an automatic tier 1 clicker that gives 1 click per second";
         document.getElementById("cupg1").onclick = function() {
             if (clicks >= 50) {
+                cBought[0] = true;
                 clicks = clicks - 50;
                 clickers[0]++;
             }
