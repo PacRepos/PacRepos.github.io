@@ -53,7 +53,7 @@ function addShopButtons() {
     if (clicks >= 50) {
         var c1btn = document.createElement("button");
         div.append(c1btn);
-        btn.setAttribute("id", "cupg1");
+        c1btn.setAttribute("id", "cupg1");
         document.getElementById("cupg1").innerHTML = "Purchase an automatic tier 1 clicker that gives 1 click per second";
         document.getElementById("cupg1").onclick = function() {
             if (clicks >= 50) {
