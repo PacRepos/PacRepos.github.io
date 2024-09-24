@@ -50,7 +50,7 @@ function addShopButtons() {
         }
     }
 
-    if (clicks >= 50) {
+    if (clicks >= 50 && !cBought[0]) {
         var c1btn = document.createElement("button");
         div.append(c1btn);
         c1btn.setAttribute("id", "cupg1");
